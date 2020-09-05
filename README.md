@@ -2,7 +2,7 @@
 
 This repository contains data and TensorFlow 1.1x code for the preprint “[Multi-Modal Imitation Learning in Partially Observable Environments](https://markfzp.github.io/data/AAMAS2020_Imitation.pdf)".
 
-# Dependency on Linux
+## Dependency on Linux
 
 1. Install cuda 10.0 if it's not available already. 
 
@@ -25,7 +25,7 @@ conda install tensorflow-gpu=1.12.0
 conda install gym
 ```
 
-# Export Expert Demos
+## Export Expert Demos
 
 1. Import the Python files of customized partial observable Gym environments `mujoco/expert/hopper_v3.py` to the corresponding folder of the Gym local directory `[Gym dir]/gym/envs/mujoco/`.
 
@@ -38,7 +38,7 @@ cd mojoco/expert
 python3 expert.py
 ```
 
-# Run Imitation
+## Run Imitation
 
 All the tunable hyperparameters and network structures including hidden dimensions, activation functions, learning rates, training iterations, gamma and lambda used in GAE, clipping range in PPO used for training the imitation policy are variables in `mujoco/config.py`.
 
