@@ -14,12 +14,13 @@ sudo apt-get update && sudo apt-get install cmake libopenmpi-dev zlib1g-dev
 wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
 conda update -n base -c defaults conda
 conda create --name mmim python=3.6
-source activate mmim
+conda activate mmim
 
+conda install pip
 conda install numpy pyyaml setuptools cmake cffi tqdm pyyaml scipy ipython mkl mkl-include cython typing h5py nltk spacy numpydoc scikit-learn jpeg
 
-pip3 install mujoco-py
-pip3 install stable-baselines[mpi]
+pip install mujoco-py
+pip install stable-baselines[mpi]
 
 conda install tensorflow-gpu=1.12.0
 conda install gym
